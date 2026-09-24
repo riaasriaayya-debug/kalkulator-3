@@ -1,22 +1,22 @@
-:root{
-    --warna-latar:#eef3fb;
-    --warna-utama:#2563eb;
-    --warna-display:#095cd8;
+:root {
+    --warna-latar: #eef3fb;
+    --warna-utama: #2563eb;
+    --warna-display: #d809ab;
 }
 
-body{
+body {
     min-height: 100vh;
-    background-color: linear-gradient(135deg, var(--wrna-latar),#da0b7c);
+    background: linear-gradient(135deg, var(--warna-latar), #da0b7c);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.kalkulator{
+.kalkulator {
     width: 100%;
     max-width: 380px;
     border-radius: 24px;
 }
 
-.display{
+.Display {
     padding: 20px;
     border-radius: 16px;
     background-color: var(--warna-display);
@@ -24,262 +24,58 @@ body{
     text-align: right;
 }
 
-.riwayat{
+.riwayat {
     min-height: 24px;
     color: #b8c9e3;
     font-size: 14px;
 }
 
-.hasil{
+.hasil {
     overflow-wrap: anywhere;
-    font-size: clam(28px,7vw,40px);
+    font-size: clamp(28px, 7vw, 40px);
     font-weight: bold;
     line-height: 1.3;
 }
-.tombol{
+
+.tombol {
     min-height: 60px;
-    border: 12px;
+    border: none;
+    border-radius: 12px;
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
 
     /* Animasi */
-    transform: 
-     transform 0.2s ease,
-     background-color 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        filter 0.2s ease;
 }
 
-.tombol:hover{
+/* Ini bagian yang membuat kursor "mengubah" tampilan tombol secara otomatis */
+.tombol:hover {
     transform: translateY(-2px);
+    background-color: var(--warna-utama); 
+    filter: brightness(1.08);
 }
 
-.tombol:active{
+.tombol:active {
     transform: scale(0.96);
 }
 
-.btn-primay{
+.btn-primary {
     background-color: var(--warna-utama);
     border-color: var(--warna-utama);
-}
-
-@media (prefers-reduced-motion: reduce){
-   .tombol{
-    transition: none;
-   }
-   .tombol:hover,
-   .tombol:active{
-    transform: none;
-   }
-}:root{
-    --warna-latar:#eef3fb;
-    --warna-utama:#2563eb;
-    --warna-display:#095cd8;
-}
-
-body{
-    min-height: 100vh;
-    background-color: linear-gradient(135deg, var(--wrna-latar),#da0b7c);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.kalkulator{
-    width: 100%;
-    max-width: 380px;
-    border-radius: 24px;
-}
-
-.display{
-    padding: 20px;
-    border-radius: 16px;
-    background-color: var(--warna-display);
     color: white;
-    text-align: right;
 }
 
-.riwayat{
-    min-height: 24px;
-    color: #b8c9e3;
-    font-size: 14px;
-}
+@media (prefers-reduced-motion: reduce) {
+    .tombol {
+        transition: none;
+    }
 
-.hasil{
-    overflow-wrap: anywhere;
-    font-size: clam(28px,7vw,40px);
-    font-weight: bold;
-    line-height: 1.3;
-}
-.tombol{
-    min-height: 60px;
-    border: 12px;
-    font-size: 20px;
-    font-weight: 600;
-
-    /* Animasi */
-    transform: 
-     transform 0.2s ease,
-     background-color 0.2s ease;
-}
-
-.tombol:hover{
-    transform: translateY(-2px);
-}
-
-.tombol:active{
-    transform: scale(0.96);
-}
-
-.btn-primay{
-    background-color: var(--warna-utama);
-    border-color: var(--warna-utama);
-}
-
-@media (prefers-reduced-motion: reduce){
-   .tombol{
-    transition: none;
-   }
-   .tombol:hover,
-   .tombol:active{
-    transform: none;
-   }
-}:root{
-    --warna-latar:#eef3fb;
-    --warna-utama:#2563eb;
-    --warna-display:#095cd8;
-}
-
-body{
-    min-height: 100vh;
-    background-color: linear-gradient(135deg, var(--wrna-latar),#da0b7c);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.kalkulator{
-    width: 100%;
-    max-width: 380px;
-    border-radius: 24px;
-}
-
-.display{
-    padding: 20px;
-    border-radius: 16px;
-    background-color: var(--warna-display);
-    color: white;
-    text-align: right;
-}
-
-.riwayat{
-    min-height: 24px;
-    color: #b8c9e3;
-    font-size: 14px;
-}
-
-.hasil{
-    overflow-wrap: anywhere;
-    font-size: clam(28px,7vw,40px);
-    font-weight: bold;
-    line-height: 1.3;
-}
-.tombol{
-    min-height: 60px;
-    border: 12px;
-    font-size: 20px;
-    font-weight: 600;
-
-    /* Animasi */
-    transform: 
-     transform 0.2s ease,
-     background-color 0.2s ease;
-}
-
-.tombol:hover{
-    transform: translateY(-2px);
-}
-
-.tombol:active{
-    transform: scale(0.96);
-}
-
-.btn-primay{
-    background-color: var(--warna-utama);
-    border-color: var(--warna-utama);
-}
-
-@media (prefers-reduced-motion: reduce){
-   .tombol{
-    transition: none;
-   }
-   .tombol:hover,
-   .tombol:active{
-    transform: none;
-   }
-}:root{
-    --warna-latar:#eef3fb;
-    --warna-utama:#2563eb;
-    --warna-display:#095cd8;
-}
-
-body{
-    min-height: 100vh;
-    background-color: linear-gradient(135deg, var(--wrna-latar),#da0b7c);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.kalkulator{
-    width: 100%;
-    max-width: 380px;
-    border-radius: 24px;
-}
-
-.display{
-    padding: 20px;
-    border-radius: 16px;
-    background-color: var(--warna-display);
-    color: white;
-    text-align: right;
-}
-
-.riwayat{
-    min-height: 24px;
-    color: #b8c9e3;
-    font-size: 14px;
-}
-
-.hasil{
-    overflow-wrap: anywhere;
-    font-size: clam(28px,7vw,40px);
-    font-weight: bold;
-    line-height: 1.3;
-}
-.tombol{
-    min-height: 60px;
-    border: 12px;
-    font-size: 20px;
-    font-weight: 600;
-
-    /* Animasi */
-    transform: 
-     transform 0.2s ease,
-     background-color 0.2s ease;
-}
-
-.tombol:hover{
-    transform: translateY(-2px);
-}
-
-.tombol:active{
-    transform: scale(0.96);
-}
-
-.btn-primay{
-    background-color: var(--warna-utama);
-    border-color: var(--warna-utama);
-}
-
-@media (prefers-reduced-motion: reduce){
-   .tombol{
-    transition: none;
-   }
-   .tombol:hover,
-   .tombol:active{
-    transform: none;
-   }
+    .tombol:hover,
+    .tombol:active {
+        transform: none;
+    }
 }

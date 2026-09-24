@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kalkulator sederhana</title>
@@ -13,7 +13,8 @@
      <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="d-flex align-item-center justify-content-center p-3">
+<body class="d-flex flex-column align-items-center justify-content-center min-vh-100 p-3"> 
+    <h2 class="fw-blod text-crimson mb-3 text-center">Aplikasi kalkulator sederhana</h2>
     <main class="kalkulator bg-white shadow-lg p-4">
         <header class="mb-4 text-center">
             <h1 class="h4 fw-blod mb-1">kalkulator</h1>
@@ -21,17 +22,16 @@
         </header>
 
         <!-- Tampilkan kalkulator -->
-        <section  class="display mb-4" aria-label="Tampilan perhitungan">
+        <section  class="Display mb-4" aria-label="Tampilan perhitungan">
             <div id="riwayat" class="riwayat"></div>
 
             <output
              id="hasil"
-             class="hasil d-block"
+             class="hasil d-block text-end fs-2 fw-blod"
              aria-label="Hasil perhitungan"
              aria-live="polite"
              >
              0
-                
             </output>
         </section>
 
